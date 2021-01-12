@@ -11,69 +11,105 @@
 <body>
     <div class="container">
         <header class="header">
-            <nav class="nav__top">
-                <div class="nav__top-tools">nav__top-tools</div>
-                <div class="nav__top-search">nav__top-search</div>
-                <div class="nav__top-user">nav__top-user</div>
+            <nav class="nav__top flex">
+                <div class="nav__top__tools flex">
+                    <select class="nav__top__tools-language" name="select-lang" id="select-lang">
+                        <option value="#">English</option>
+                        <option value="#">Dutch</option>
+                        <option value="#">French</option>
+                        <option value="#">German</option>
+                        <option value="#">Spanish</option>
+                    </select>
+                    <div class="nav__top__tools-theme">Theme</div>
+                    <div class="nav__top__tools-size">AAA</div>
+                </div>
+                <div class="nav__top__search">
+                    <input type="search" name="search" id="search" placeholder="Search Wickedpedia...">
+                    <input type="button" value="search">
+                </div>
+                <div class="nav__top__user">
+                    <a href="#">Welcome, stranger!</a>
+                    <a href="#">Contribute</a>
+                    <a href="#">Talk</a>
+                    <a href="#">Log in</a>
+                </div>
             </nav>
         </header>
-        <nav class="nav nav__section">
-            <div class="nav__section-left">
-                <a href="#">Article</a>
-                <a href="#">Talk</a>
-            </div>
-            <div class="nav__section-right">
-                <a href="#">Read</a>
-                <a href="#">Source</a>
-                <a href="#">History</a>
-            </div>
-        </nav>
         <aside class="aside-left">
-            <img src="img/logo.svg" alt="Wickedpedia logo" class="logo">
             <nav class="nav__main">
-                <ul>
-                    <li>
-                        <h4>Navigation</h4>
-                        <a href="#">main-link</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h4>Navigation</h4>
-                        <a href="#">main-link</a> </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h4>Navigation</h4>
-                        <a href="#">main-link</a> </li>
-                </ul>
+                <div class="nav__main-header">
+                    <img src="img/logo-wickedpedia.svg" alt="Wickedpedia logo" class="logo">
+                    <h3>Wickedpedia</h3>
+                    <p><em>The weird encyclopedia</em></p>
+                </div>
+                <hr>
+                <div class="nav__main-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                    </ul>
+                </div>
+                <div class="nav__main-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                    </ul>
+                </div>
+                <div class="nav__main-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                    </ul>
+                </div>
+                <div class="nav__main-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">main-link</a></li>
+                        <li><a href="#">main-link</a></li>
+                    </ul>
+                </div>
             </nav>
         </aside>
-        <aside class="aside-right">
-            <h3>Wickedpedia</h3>
-            <figure>
-                <img src="img/image.jpg" alt="Wickedpedia logo">
-                <figcaption>The logo of Wickedpedia, a 3-eyed, but friendly monster.</figcaption>
-            </figure>
-            <h4>Heading 4</h4>
-            <p>Lorem ipsum dolor</p>
-        </aside>
         <main class="main">
+            <nav class="nav__section flex">
+                <div class="nav__section-left">
+                    <a href="#">Article</a>
+                    <a href="#">Talk</a>
+                </div>
+                <div class="nav__section-right">
+                    <a href="#">Read</a>
+                    <a href="#">Source</a>
+                    <a href="#">History</a>
+                </div>
+            </nav>
             <section class="main-section">
                 <div class="section__title">
-                    <div class="section__title__top">
+                    <div class="section__title__top flex">
                         <div class="main__title__top-title">
                             <h1>Wickedpedia</h1>
                         </div>
-                        <div class="main__title__top-tools">
+                        <div class="main__title__top-tools flex">
                             <select class="section-nav">
                                 <option value="option1">option 1</option>
                                 <option value="option1">option 1</option>
                                 <option value="option1">option 1</option>
                             </select>
+                            <div class="button__edit">Edit</div>
                         </div>
                     </div>
-                    <div class="section__title__bottom">
+                    <div class="section__title__bottom flex">
                         <div class="section__title__subtitle">
                             <p><em>Redirected from <a href="#">Wickedpedia</a></em></p>
                         </div>
@@ -85,17 +121,67 @@
                     </div>
                 </div>
                 <div class="section__article">
-                    <div class="section__article-title">
+                    <div class="section__article-title flex">
                         <h2>History</h2>
                         <a href="#">Edit</a>
+                    </div>
+                    <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick
+                        quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks
+                        help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. Few
+                        quips galvanized the mock jury box. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!",
+                        Alex Trebek"s fun TV quiz game.</p>
+                    <figure>
+                        <img src="img/wickedman.jpg" alt="Wicked man">
+                        <figcaption>A man falling upwards.</figcaption>
+                    </figure>
+                    <h3>A lazy dog</h3>
+                    <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick
+                        quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks
+                        help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! “Now fax quiz Jack!” my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A
+                        very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was
+                        gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch “Jeopardy!”, </p>
+                    <hr>
+                    <h2>External Links</h2>
+                    <p><a href="#">Riker Ipsum</a> - Fear is the true enemy, the only enemy. </p>
+                    <p><a href="#">Hipster Ipsum</a> - Dummy text? More like dummy thicc text, amirite?</p>
+                    <p><a href="#">Pirate Ipsum</a> - Heave this scurvy copyfiller fer yar next adventure</p>
+                    <p><a href="#">Samuel L Ipsum</a> - The path of the righteous man is beset on all sides by the iniquities of the selfish.</p>
+
+                </div>
+            </section>
+            <section class="section__related">
+                <div class="card__wrapper flex">
+                    <div class="card">
+                        <h3>A quick brown fox</h3>
+                        <img src="img/wickedman.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi! ...</p>
+                    </div>
+                    <div class="card">
+                        <h3>A quick brown fox</h3>
+                        <img src="img/wickedman.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi! ...</p>
+                    </div>
+                    <div class="card">
+                        <h3>A quick brown fox</h3>
+                        <img src="img/wickedman.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi! ...</p>
                     </div>
                 </div>
             </section>
         </main>
+        <aside class="aside-right">
+            <h3>Wickedpedia</h3>
+            <figure>
+                <img src="img/image.jpg" alt="Wickedpedia logo">
+                <figcaption>The logo of Wickedpedia, a 3-eyed, but friendly monster.</figcaption>
+            </figure>
+            <h4>Heading 4</h4>
+            <p>Lorem ipsum dolor</p>
+        </aside>
         <footer class="footer">
             <p>Code & design © 2021 Danny Van Eeckhoutte
             </p>
-            <p>Contact:
+            <p>
                 <a href="mailto:danny.vaneeckhoutte@gmail.com">danny.vaneeckhoutte@gmail.com</a> |
                 <a href="#">Github</a> |
                 <a href="#">Béhance</a> |

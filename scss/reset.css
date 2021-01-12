@@ -7,7 +7,7 @@ body {
   padding: 0;
   text-rendering: optimizeSpeed;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.25; }
 
 *,
@@ -97,3 +97,6 @@ select {
   white-space: normal;
   font: inherit;
   line-height: 1; }
+
+hr {
+  margin: 2em 0; }
