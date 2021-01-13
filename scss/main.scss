@@ -65,11 +65,23 @@ a {
     max-width: 960px;
     .nav__section {
         justify-content: space-between;
+        align-items: center;
+        .nav__top__tools,
+        .nav__top__search,
+        .nav__top__user {
+            justify-content: center;
+            align-items: center;
+        }
     }
     .main-section {
         background-color: $color-near-black;
         .section__article {
             padding: 1em 2em;
+        }
+        .section__related {
+            h2 {
+                margin: 1em 2em;
+            }
         }
     }
     .section__title__top,
@@ -81,6 +93,10 @@ a {
     }
     .section__title__top {
         background-color: $color-dark-grey;
+        padding: 1em 2em;
+    }
+    .section__title__bottom {
+        padding: 1em 2em;
     }
     figure {
         margin: 1.6em 0;
@@ -88,12 +104,15 @@ a {
 }
 
 .card__wrapper {
+    margin-top: 1.5em;
+    flex-direction: row;
+    flex-wrap: nowrap;
     .card {
-        margin-top: 1em;
         background-color: $color-near-black;
-    }
-    .card:nth-child(2) {
-        margin: 1em 1.5em;
+        h3,
+        p {
+            padding: 1em;
+        }
     }
 }
 

@@ -8,7 +8,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.25; }
+  line-height: 1.5; }
 
 *,
 *::before,
@@ -55,13 +55,6 @@ dd {
   padding: 1rem;
   list-style: none; }
 
-button {
-  background-color: transparent;
-  color: inherit;
-  border-width: 0;
-  padding: 0;
-  cursor: pointer; }
-
 img,
 video {
   max-width: 100%;
@@ -95,8 +88,7 @@ select {
   display: inline-block;
   vertical-align: middle;
   white-space: normal;
-  font: inherit;
-  line-height: 1; }
+  font: inherit; }
 
 hr {
   margin: 2em 0; }

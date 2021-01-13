@@ -35,3 +35,15 @@
 .footer {
     grid-area: footer;
 }
+
+
+/* Remove aside on screens smaller than 1024px */
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+    aside {
+        display: none;
+    }
+}
