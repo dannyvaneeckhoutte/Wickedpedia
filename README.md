@@ -1,4 +1,5 @@
-![Wickedpedia logo](https://github.com/dannyvaneeckhoutte/Wickedpedia/blob/main/img/logo-wickedpedia.svg =250x)
+<p align="center"><img src="https://github.com/dannyvaneeckhoutte/Wickedpedia/blob/main/img/logo-wickedpedia.svg"  width="200" align="center"></p>
+
 
 # Wickedpedia
 
