@@ -3,120 +3,128 @@
 
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:wght@700&display=swap');
-$font-heading: 'Playfair Display',
-serif;
-$font-txt: 'Open Sans',
-sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:wght@700&display=swap");
+$font-heading: "Playfair Display", serif;
+$font-txt: "Open Sans", sans-serif;
 
 /* COLOR */
 
-$color-white: #FAFAFA;
-$color-light-grey: #E2E2E2;
-$color-med-grey: #C3C3C3;
+$color-white: #fafafa;
+$color-light-grey: #e2e2e2;
+$color-med-grey: #c3c3c3;
 $color-dark-grey: #606060;
-$color-near-black: #3F3F3F;
+$color-near-black: #3f3f3f;
 $color-black: #202020;
-$color-accent-primary: #96CBDE;
+$color-accent-primary: #96cbde;
+
 .flex {
-    display: flex;
+  display: flex;
 }
 
 body {
-    background: $color-black;
-    font-family: $font-txt;
-    color: $color-white;
+  background: $color-black;
+  font-family: $font-txt;
+  color: $color-white;
 }
 
 h1,
 h2 {
-    font-family: $font-heading;
+  font-family: $font-heading;
 }
 
 h1 {
-    font-size: 2.4em;
+  font-size: 2.4em;
 }
 
 a {
-    color: $color-accent-primary;
+  color: $color-accent-primary;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .header {
-    .nav__top {
-        justify-content: space-between;
-    }
+  .nav__top {
+    justify-content: space-between;
+  }
 }
 
 .aside-left {
-    .nav__main {
-        padding: 0 2em;
-        .nav__main-header {
-            text-align: center;
-            margin: 2em;
-        }
+  .nav__main {
+    padding: 0 2em;
+    .nav__main-header {
+      text-align: center;
+      margin: 2em;
     }
+  }
 }
 
 .aside-right {
-    background-color: $color-near-black;
+  background-color: $color-near-black;
 }
 
 .main {
-    max-width: 960px;
-    .nav__section {
-        justify-content: space-between;
-        align-items: center;
-        .nav__top__tools,
-        .nav__top__search,
-        .nav__top__user {
-            justify-content: center;
-            align-items: center;
-        }
+  //  max-width: 960px;
+  .nav__section {
+    justify-content: space-between;
+    align-items: center;
+    .nav__top__tools,
+    .nav__top__search,
+    .nav__top__user {
+      justify-content: center;
+      align-items: center;
     }
-    .main-section {
-        background-color: $color-near-black;
-        .section__article {
-            padding: 1em 2em;
-        }
-        .section__related {
-            h2 {
-                margin: 1em 2em;
-            }
-        }
+  }
+  .main-section {
+    background-color: $color-near-black;
+    .section__article {
+      padding: 1em 2em;
     }
-    .section__title__top,
-    .main__title__top-tools,
-    .section__title__bottom,
-    .section__article-title {
-        justify-content: space-between;
-        align-items: center;
+  }
+  .section__related {
+    h2 {
+      margin: 1em 1.4em;
     }
-    .section__title__top {
-        background-color: $color-dark-grey;
-        padding: 1em 2em;
-    }
-    .section__title__bottom {
-        padding: 1em 2em;
-    }
-    figure {
-        margin: 1.6em 0;
-    }
+  }
+  .section__title__top,
+  .main__title__top-tools,
+  .section__title__bottom,
+  .section__article-title {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section__title__top {
+    background-color: $color-dark-grey;
+    padding: 1em 2em;
+  }
+  .section__title__bottom {
+    padding: 1em 2em;
+  }
+  figure {
+    margin: 1.6em 0;
+  }
 }
 
 .card__wrapper {
-    margin-top: 1.5em;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    .card {
-        background-color: $color-near-black;
-        h3,
-        p {
-            padding: 1em;
-        }
+  margin-top: 1.5em;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  @media only screen and (max-width: "960px") {
+    display: block;
+  }
+  .card {
+    background-color: $color-near-black;
+    margin: 0 1em;
+    h3,
+    p {
+      padding: 1em;
     }
+  }
 }
 
 .footer {
-    font-size: 0.9em;
-    text-align: center;
+  font-size: 0.9em;
+  text-align: center;
 }

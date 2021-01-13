@@ -140,7 +140,7 @@ hr {
 body {
   background: #202020;
   font-family: "Open Sans", sans-serif;
-  color: #FAFAFA; }
+  color: #fafafa; }
 
 h1,
 h2 {
@@ -150,7 +150,11 @@ h1 {
   font-size: 2.4em; }
 
 a {
-  color: #96CBDE; }
+  color: #96cbde; }
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto; }
 
 .header .nav__top {
   justify-content: space-between; }
@@ -162,44 +166,46 @@ a {
     margin: 2em; }
 
 .aside-right {
-  background-color: #3F3F3F; }
+  background-color: #3f3f3f; }
 
-.main {
-  max-width: 960px; }
-  .main .nav__section {
-    justify-content: space-between;
+.main .nav__section {
+  justify-content: space-between;
+  align-items: center; }
+  .main .nav__section .nav__top__tools,
+  .main .nav__section .nav__top__search,
+  .main .nav__section .nav__top__user {
+    justify-content: center;
     align-items: center; }
-    .main .nav__section .nav__top__tools,
-    .main .nav__section .nav__top__search,
-    .main .nav__section .nav__top__user {
-      justify-content: center;
-      align-items: center; }
-  .main .main-section {
-    background-color: #3F3F3F; }
-    .main .main-section .section__article {
-      padding: 1em 2em; }
-    .main .main-section .section__related h2 {
-      margin: 1em 2em; }
-  .main .section__title__top,
-  .main .main__title__top-tools,
-  .main .section__title__bottom,
-  .main .section__article-title {
-    justify-content: space-between;
-    align-items: center; }
-  .main .section__title__top {
-    background-color: #606060;
+.main .main-section {
+  background-color: #3f3f3f; }
+  .main .main-section .section__article {
     padding: 1em 2em; }
-  .main .section__title__bottom {
-    padding: 1em 2em; }
-  .main figure {
-    margin: 1.6em 0; }
+.main .section__related h2 {
+  margin: 1em 1.4em; }
+.main .section__title__top,
+.main .main__title__top-tools,
+.main .section__title__bottom,
+.main .section__article-title {
+  justify-content: space-between;
+  align-items: center; }
+.main .section__title__top {
+  background-color: #606060;
+  padding: 1em 2em; }
+.main .section__title__bottom {
+  padding: 1em 2em; }
+.main figure {
+  margin: 1.6em 0; }
 
 .card__wrapper {
   margin-top: 1.5em;
   flex-direction: row;
   flex-wrap: nowrap; }
+  @media only screen and (max-width: 960px) {
+    .card__wrapper {
+      display: block; } }
   .card__wrapper .card {
-    background-color: #3F3F3F; }
+    background-color: #3f3f3f;
+    margin: 0 1em; }
     .card__wrapper .card h3,
     .card__wrapper .card p {
       padding: 1em; }
